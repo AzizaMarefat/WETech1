@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kde ma nájdete | Aziza Nazari</title>
+
+    <meta
+        name="description"
+        content="Interaktívna mapa s mojou školou, približným bydliskom a možnosťou výpočtu vzdialenosti."
+    >
+
+    <meta property="og:title" content="Kde ma nájdete | Aziza Nazari">
+
+    <meta
+        property="og:description"
+        content="Interaktívna mapa školy, približného bydliska a vlastných bodov."
+    >
+
+    <meta property="og:image" content="../img/me.jpeg">
+
+    <link rel="icon" href="../favicon.png">
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        defer
+    ></script>
+
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">
+        Preskočiť na obsah
+    </a>
+
+    <header class="site-header">
+        <div class="container">
+
+            <div class="brand">
+
+                <a
+                    class="monogram"
+                    href="../index.html"
+                    aria-label="Domov"
+                >
+                    AN
+                </a>
+
+                <div class="brand-text">
+
+                    <p class="site-name">
+                        Aziza Nazari
+                    </p>
+
+                    <p class="site-slogan">
+                        Študentka aplikovanej informatiky so záujmom o vývoj aplikácií a webové technológie.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Hlavná navigácia">
+        <div class="container">
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="main-menu"
+            >
+                Menu
+            </button>
+
+            <ul id="main-menu" class="nav-list">
+
+                <li>
+                    <a class="nav-link" href="../index.html">
+                        Profil
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="cv.html">
+                        Životopis
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="workspace.html">
+                        Pracovné prostredie
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="schedule.html">
+                        Kedy ma zastihnete
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        class="nav-link nav-link--active"
+                        href="map.html"
+                    >
+                        Kde ma nájdete
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <main id="main-content" class="container">
+
+        <section class="map-section">
+
+            <h1>Kde ma nájdete</h1>
+
+            <h2>Moja škola a približné bydlisko</h2>
+
+            <p>
+                Na mape je označená moja škola a približná poloha
+                môjho bydliska. Kliknutím na mapu môžete pridať
+                vlastný bod a následne vypočítať jeho vzdialenosť
+                od školy alebo môjho bydliska.
+            </p>
+
+            <div
+                id="map"
+                class="map"
+                role="region"
+                aria-label="Interaktívna mapa"
+            ></div>
+
+            <section class="map-controls">
+
+                <h2>Výpočet vzdialenosti</h2>
+
+                <p
+                    id="map-empty-state"
+                    class="map-message"
+                >
+                    Zatiaľ ste nepridali žiadny bod. Kliknite na mapu
+                    a pomenujte nové miesto.
+                </p>
+
+                <div class="map-form">
+
+                    <label for="point-select">
+                        Vyberte pridaný bod:
+                    </label>
+
+                    <select id="point-select" disabled>
+                        <option value="">
+                            Žiadny bod
+                        </option>
+                    </select>
+
+                    <label for="target-select">
+                        Vyberte cieľ:
+                    </label>
+
+                    <select id="target-select">
+                        <option value="school">
+                            Škola
+                        </option>
+
+                        <option value="home">
+                            Domov
+                        </option>
+                    </select>
+
+                    <button
+                        id="calculate-distance"
+                        type="button"
+                        disabled
+                    >
+                        Vypočítať vzdialenosť
+                    </button>
+
+                </div>
+
+                <p
+                    id="distance-result"
+                    class="map-result"
+                    aria-live="polite"
+                ></p>
+
+                <h2>Pridané body</h2>
+
+                <ul id="point-list" class="point-list"></ul>
+
+            </section>
+
+            <section class="map-sources">
+
+                <h2>Zdroje mapy</h2>
+
+                <p>
+                    Mapové podklady:
+                    <a
+                        href="https://www.openstreetmap.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        OpenStreetMap
+                    </a>
+                </p>
+
+                <p>
+                    Mapová knižnica:
+                    <a
+                        href="https://leafletjs.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Leaflet
+                    </a>
+                </p>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+    <div class="container">
+
+        <address>
+            <a href="mailto:aziza.nazari@gmail.com">
+                aziza.nazari@gmail.com
+            </a>
+        </address>
+
+        <p>&copy; 2026 Aziza Nazari</p>
+
+        <p>
+            Zdroje:
+            <a
+                href="https://www.pexels.com/photo/modern-workplace-with-gadgets-in-cozy-room-with-soft-light-4041405/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Pexels
+            </a>
+            |
+            <a
+                href="https://www.openstreetmap.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                OpenStreetMap
+            </a>
+            |
+            <a
+                href="https://leafletjs.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Leaflet
+            </a>
+            |
+            <a href="../README.md">
+                README
+            </a>
+        </p>
+
+    </div>
+   </footer>
+
+</body>
+
+</html>

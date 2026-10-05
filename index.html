@@ -1,26 +1,187 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Profil | Aziza Nazari</title>
+
+    <meta
+        name="description"
+        content="Osobná webová vizitka Azizy Nazari, študentky aplikovanej informatiky so záujmom o vývoj aplikácií a webové technológie."
+    >
+
+    <meta property="og:title" content="Profil | Aziza Nazari">
+    <meta
+        property="og:description"
+        content="Osobná webová vizitka Azizy Nazari."
+    >
+    <meta property="og:image" content="img/me.jpeg">
+
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/script.js" defer></script>
 </head>
+
 <body>
-    <h1>Hello World</h1>
+
+    <a class="skip-link" href="#main-content">Preskočiť na obsah</a>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <a class="monogram" href="index.html" aria-label="Domov">AN</a>
+
+                <div class="brand-text">
+                    <p class="site-name">Aziza Nazari</p>
+                    <p class="site-slogan">
+                        Študentka aplikovanej informatiky so záujmom o vývoj aplikácií a webové technológie.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Hlavná navigácia">
+        <div class="container">
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="main-menu"
+            >
+                Menu
+            </button>
+
+            <ul id="main-menu" class="nav-list">
+                <li>
+                    <a class="nav-link nav-link--active" href="index.html">
+                        Profil
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="pages/cv.html">
+                        Životopis
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="pages/workspace.html">
+                        Pracovné prostredie
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="pages/schedule.html">
+                        Kedy ma zastihnete
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="pages/map.html">
+                        Kde ma nájdete
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <main id="main-content" class="container">
+
+        <section class="profile">
+    <h1>Kto som</h1>
+
+    <h2>O mne</h2>
+
+    <img
+        class="profile-image"
+        src="img/me.jpeg"
+        alt="Fotografia Azizy Nazari"
+        width="300"
+        height="400"
+        loading="lazy"
+    >
+
+    <p>
+        Som študentka aplikovanej informatiky na FEI STU v Bratislave.
+        Zaujímam sa najmä o vývoj aplikácií, webové technológie
+        a softvérové inžinierstvo.
+    </p>
+
+    <p>
+        Popri štúdiu sa venujem vývoju iOS aplikácií.
+        Mojím cieľom je ďalej rozvíjať svoje programátorské schopnosti
+        a získavať praktické skúsenosti pri tvorbe moderných aplikácií.
+    </p>
+
+    <h2>Moje hlavné zamerania</h2>
+
+    <ul class="key-skills">
+        <li>Vývoj iOS aplikácií</li>
+        <li>Webové technológie</li>
+        <li>Softvérové inžinierstvo</li>
+    </ul>
+
+    <aside class="profile-motto">
+        <p>
+            „Každý projekt je príležitosť naučiť sa niečo nové.“
+        </p>
+    </aside>
+</section>
+
+    </main>
+    <footer class="site-footer">
+    <div class="container">
+
+        <address>
+            <a href="mailto:aziza.nazari@gmail.com">
+                aziza.nazari@gmail.com
+            </a>
+        </address>
+
+        <p>&copy; 2026 Aziza Nazari</p>
+
+        <p>
+            Zdroje:
+            <a
+                href="https://www.pexels.com/photo/modern-workplace-with-gadgets-in-cozy-room-with-soft-light-4041405/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Pexels
+            </a>
+            |
+            <a
+                href="https://www.openstreetmap.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                OpenStreetMap
+            </a>
+            |
+            <a
+                href="https://leafletjs.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Leaflet
+            </a>
+            |
+            <a href="README.md">
+                README
+            </a>
+        </p>
+
+    </div>
+   </footer>
+
     
+
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-</body>
->>>>>>> 1c11ed5 (only for testing)
+
 </html>

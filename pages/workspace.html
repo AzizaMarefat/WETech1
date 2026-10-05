@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pracovné prostredie | Aziza Nazari</title>
+
+    <meta
+        name="description"
+        content="Moje pracovné prostredie a nástroje, ktoré používam pri štúdiu a vývoji aplikácií."
+    >
+
+    <meta
+        property="og:title"
+        content="Pracovné prostredie | Aziza Nazari"
+    >
+
+    <meta
+        property="og:description"
+        content="Interaktívny pohľad na pracovné prostredie Azizy Nazari."
+    >
+
+    <meta
+        property="og:image"
+        content="../img/workspace.jpg"
+    >
+
+    <link rel="icon" href="../favicon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">
+        Preskočiť na obsah
+    </a>
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <div class="brand">
+
+                <a
+                    class="monogram"
+                    href="../index.html"
+                    aria-label="Domov"
+                >
+                    AN
+                </a>
+
+                <div class="brand-text">
+
+                    <p class="site-name">
+                        Aziza Nazari
+                    </p>
+
+                    <p class="site-slogan">
+                        Študentka aplikovanej informatiky so záujmom o vývoj aplikácií a webové technológie.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav
+        class="main-nav"
+        aria-label="Hlavná navigácia"
+    >
+
+        <div class="container">
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="main-menu"
+            >
+                Menu
+            </button>
+
+            <ul
+                id="main-menu"
+                class="nav-list"
+            >
+
+                <li>
+                    <a
+                        class="nav-link"
+                        href="../index.html"
+                    >
+                        Profil
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        class="nav-link"
+                        href="cv.html"
+                    >
+                        Životopis
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        class="nav-link nav-link--active"
+                        href="workspace.html"
+                    >
+                        Pracovné prostredie
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        class="nav-link"
+                        href="schedule.html"
+                    >
+                        Kedy ma zastihnete
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        class="nav-link"
+                        href="map.html"
+                    >
+                        Kde ma nájdete
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <main
+        id="main-content"
+        class="container"
+    >
+
+        <section class="workspace">
+
+            <h1>Moje pracovné prostredie</h1>
+
+            <h2>Ako pracujem</h2>
+
+            <p>
+                Pri štúdiu a práci používam niekoľko nástrojov,
+                ktoré mi pomáhajú pri programovaní, vývoji aplikácií
+                a organizovaní školských projektov.
+            </p>
+
+            <p>
+                Kliknite na označené body na obrázku a zobrazte
+                informácie o jednotlivých častiach môjho pracovného
+                prostredia.
+            </p>
+
+            <div class="workspace-interactive">
+
+                <!-- Hotspot controls -->
+
+                <input
+                    class="hotspot-input"
+                    type="radio"
+                    name="workspace-hotspot"
+                    id="hotspot-desktop"
+                    aria-label="Stolný počítač"
+                    checked
+                >
+
+                <input
+                    class="hotspot-input"
+                    type="radio"
+                    name="workspace-hotspot"
+                    id="hotspot-keyboard"
+                    aria-label="Klávesnica a myš"
+                >
+
+                <input
+                    class="hotspot-input"
+                    type="radio"
+                    name="workspace-hotspot"
+                    id="hotspot-laptop"
+                    aria-label="Notebook"
+                >
+
+                <input
+                    class="hotspot-input"
+                    type="radio"
+                    name="workspace-hotspot"
+                    id="hotspot-notes"
+                    aria-label="Poznámkový blok a telefón"
+                >
+
+                <input
+                    class="hotspot-input"
+                    type="radio"
+                    name="workspace-hotspot"
+                    id="hotspot-plant"
+                    aria-label="Pracovné prostredie"
+                >
+
+                <div class="workspace-stage">
+
+                    <div class="workspace-image-area">
+
+                        <img
+                            class="workspace-image"
+                            src="../img/workspace.jpg"
+                            alt="Pracovný stôl so stolným počítačom, notebookom, klávesnicou, telefónom, poznámkovým blokom a rastlinami"
+                            width="1200"
+                            height="800"
+                            loading="lazy"
+                        >
+
+                        <label
+                            class="hotspot-marker hotspot-marker--desktop"
+                            for="hotspot-desktop"
+                        >
+                            1
+                        </label>
+
+                        <label
+                            class="hotspot-marker hotspot-marker--keyboard"
+                            for="hotspot-keyboard"
+                        >
+                            2
+                        </label>
+
+                        <label
+                            class="hotspot-marker hotspot-marker--laptop"
+                            for="hotspot-laptop"
+                        >
+                            3
+                        </label>
+
+                        <label
+                            class="hotspot-marker hotspot-marker--notes"
+                            for="hotspot-notes"
+                        >
+                            4
+                        </label>
+
+                        <label
+                            class="hotspot-marker hotspot-marker--plant"
+                            for="hotspot-plant"
+                        >
+                            5
+                        </label>
+
+                    </div>
+
+                    <div class="workspace-panels">
+
+                        <article
+                            class="hotspot-panel hotspot-panel--desktop"
+                        >
+
+                            <h2>Stolný počítač</h2>
+
+                            <p>
+                                Stolný počítač používam pri programovaní,
+                                práci na školských projektoch a webových
+                                technológiách.
+                            </p>
+
+                        </article>
+
+                        <article
+                            class="hotspot-panel hotspot-panel--keyboard"
+                        >
+
+                            <h2>Klávesnica a myš</h2>
+
+                            <p>
+                                Klávesnicu a myš používam pri každodennej
+                                práci s kódom a pri úpravách projektov.
+                            </p>
+
+                        </article>
+
+                        <article
+                            class="hotspot-panel hotspot-panel--laptop"
+                        >
+
+                            <h2>Notebook</h2>
+
+                            <p>
+                                Notebook používam najmä na vývoj aplikácií,
+                                štúdium a prácu na školských zadaniach.
+                            </p>
+
+                        </article>
+
+                        <article
+                            class="hotspot-panel hotspot-panel--notes"
+                        >
+
+                            <h2>Poznámkový blok a telefón</h2>
+
+                            <p>
+                                Poznámkový blok používam na zapisovanie
+                                úloh a nápadov. Telefón využívam aj pri
+                                testovaní mobilných aplikácií.
+                            </p>
+
+                        </article>
+
+                        <article
+                            class="hotspot-panel hotspot-panel--plant"
+                        >
+
+                            <h2>Pracovné prostredie</h2>
+
+                            <p>
+                                Pri práci mám rada pokojné a príjemné
+                                prostredie, ktoré mi pomáha sústrediť sa.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="image-source">
+                Zdroj obrázka:
+                <a
+                    href="https://www.pexels.com/photo/modern-workplace-with-gadgets-in-cozy-room-with-soft-light-4041405/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Pexels
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+    <div class="container">
+
+        <address>
+            <a href="mailto:aziza.nazari@gmail.com">
+                aziza.nazari@gmail.com
+            </a>
+        </address>
+
+        <p>&copy; 2026 Aziza Nazari</p>
+
+        <p>
+            Zdroje:
+            <a
+                href="https://www.pexels.com/photo/modern-workplace-with-gadgets-in-cozy-room-with-soft-light-4041405/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Pexels
+            </a>
+            |
+            <a
+                href="https://www.openstreetmap.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                OpenStreetMap
+            </a>
+            |
+            <a
+                href="https://leafletjs.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Leaflet
+            </a>
+            |
+            <a href="../README.md">
+                README
+            </a>
+        </p>
+
+      </div>
+   </footer>
+
+</body>
+
+</html>
